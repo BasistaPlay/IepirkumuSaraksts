@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="lv">
+
 <head>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
@@ -7,18 +8,24 @@
     <meta name="Iepirkšanas saraksts" content="width=device-width, initial-scale=1.0">
     <title>Iepirkšanas saraksts</title>
 </head>
+
 <body>
     <h1 class="virsraksts">Iepirkšanas sarkasts</h1>
     <div id="buttons">
-    <button class="poga">Pievienot sarakstā</button>
+        <button id="poga">Pievienot sarakstā</button>
     </div>
 
-    <div class="main">
-        <p class="logs" align="center">Pievienot sarakstam</p>
-        <form class="form1">
-          <input class="Produkts " type="text" align="center" placeholder="Produkts">
-          <input class="pass" type="text" align="center" placeholder="Daudzums">
-          <a class="Pievienot" align="center">Pievienot</a>
+    <div id="logs">
+        <h2 class="virsraksts2">Pievienot sarakstam</h2>
+        <input placeholder="Produkts" type="text" id="Produkts">
+        <input placeholder="Daudzums" type="number" id="Daudzums" min="1" max="20">
+        <button id="poga2">Pievienot sarakstā</button>
+    </div>
+
+    <div id="saeaksts">
+        <div class="pirkums">
+        </div>
+    </div>
 
     <script src="js.js"></script>
 </body>
