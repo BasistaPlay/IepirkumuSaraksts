@@ -60,3 +60,26 @@ body {
     margin-left: -30px;
     opacity: 100%;
 }
+#saraksts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.pirkums {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid rgba(224, 6, 206, 0.801);
+    border-radius: 5px;
+    height: 60px;
+    width: 280px;
+    background-color: rgba(255, 6, 172, 0.336);
+    padding: 5px;
+    margin: 15px;
+}
+h4 {
+    margin-top: -15px;
+}
+h3 {
+    margin-top: 5px;
+}
