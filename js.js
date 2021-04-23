@@ -5,27 +5,34 @@ document.getElementById('poga').addEventListener('click', () => {
     logs.style.display = 'block';
 });
 
-document.getElementById('poga').addEventListener('click', () => {
-    document.getElementById('poga').style.display = 'none';
-
-});
 
 document.getElementById('poga2').addEventListener('click', () => {
     logs.style.display = 'none';
 
+
     let saraksts = { Produkts: Produkts.value, Daudzums: Daudzums.value };
 
-    Produkts.value = "";
-    Daudzums.value = "";
 
-    PirkumaSaraksts.push(saraksts);
+    if (Produkts.value === "") {
+        alert("Ierakstat produktu!");
+        logs.style.display = 'block';
 
-    render();
 
+    } else if (Daudzums.value === "") {
+        alert("Ierakstat Daudzumu!");
+        logs.style.display = 'block';
+
+
+    } else {
+        Produkts.value = "";
+        Daudzums.value = "";
+        PirkumaSaraksts.push(saraksts);
+        render();
+    }
 });
 
 function render() {
-    let Produkti = document.getElementById("saraksts")
+    let Produkti = document.getElementById("saraksts");
     Produkti.innerHTML = "";
 
     for (let i = 0; i < PirkumaSaraksts.length; i++) {

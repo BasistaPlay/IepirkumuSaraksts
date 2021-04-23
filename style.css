@@ -1,6 +1,6 @@
 .virsraksts {
-    text-align: center;
     font-family: Arial, sans-serif;
+    text-align: center;
 }
 
 #poga {
@@ -13,58 +13,61 @@
     cursor: pointer;
 }
 
-
-}
-.saraksts {
-    text-align: center;
-}
 body {
     background-color: #b100f16e;
     font-family: 'Ubuntu', sans-serif;
 }
+
 #logs {
     display: none;
     position: absolute;
-    top: 50%;
+    top: 54%;
     left: 50%;
     background: rgba(43, 6, 33, 0.301);
-    width: 203px;
+    width: 250px;
     margin: -320px 0 0 -160px;
     padding: 45px;
     box-shadow: 0 0 3px rgb(255, 0, 0);
 }
+
 #Produkts {
-    margin-top: -8x;
-    margin-right: 200px;
+    margin-top: x;
+    margin-left: 45px;
     border-radius: 2px;
     opacity: 100%;
     width: 150px;
     text-align: center;
 }
+
 #Daudzums {
     border-radius: 2px;
     opacity: 100%;
-    width: 78px;
-    margin-left: 40px;
-    margin-top: -200px;
+    width: 80px;
+    margin-top: -2200px;
     text-align: center;
+    margin-left: 80px;
 }
+
 #poga2 {
     cursor: pointer;
     text-align: center;
-    margin-left: 25px;
+    margin-left: 60px;
     margin-top: 7px;
+    align-items: center;
 }
+
 .virsraksts2 {
     margin-top: -30px;
-    margin-left: -30px;
     opacity: 100%;
+    text-align: center;
 }
+
 #saraksts {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
+
 .pirkums {
     display: flex;
     flex-direction: column;
@@ -77,9 +80,11 @@ body {
     padding: 5px;
     margin: 15px;
 }
+
 h4 {
     margin-top: -15px;
 }
+
 h3 {
     margin-top: 5px;
 }
