@@ -12,23 +12,18 @@ document.getElementById('poga').addEventListener('click', () => {
     logs.style.display = 'block';
 });
 
-
 document.getElementById('poga2').addEventListener('click', () => {
     logs.style.display = 'none';
 
-
     let saraksts = { Produkts: Produkts.value, Daudzums: Daudzums.value };
-
 
     if (Produkts.value === "") {
         alert("Ierakstat produktu!");
         logs.style.display = 'block';
 
-
     } else if (Daudzums.value === "") {
         alert("Ierakstat Daudzumu!");
         logs.style.display = 'block';
-
 
     } else {
         Produkts.value = "";
@@ -37,7 +32,6 @@ document.getElementById('poga2').addEventListener('click', () => {
         render();
     };
 });
-
 
 function render() {
     let Produkti = document.getElementById("saraksts");
@@ -52,8 +46,6 @@ function render() {
         </div>`
 
         Produkti.innerHTML += pirkums;
-
-
     };
 
     var close = document.getElementsByClassName("close");
@@ -63,19 +55,11 @@ function render() {
             div.style.display = "none";
             PirkumaSaraksts = []
         };
-
     };
-
-
-
 };
-
-
-
 
 
 document.getElementById('poga2').addEventListener('click', () => {
     document.getElementById('poga').style.display = 'block';
-
 });
 //localStorage.setItem("PirkumaSaraksts", JSON.stringify(PirkumaSaraksts));
