@@ -1,6 +1,13 @@
 const logs = document.getElementById("logs");
 let PirkumaSaraksts = []
 
+
+window.addEventListener("load", () => {
+    PirkumaSaraksts = JSON.parse(localStorage.getItem("PirkumaSaraksts") || "[]");
+    render();
+});
+
+
 document.getElementById('poga').addEventListener('click', () => {
     logs.style.display = 'block';
 });
@@ -28,8 +35,9 @@ document.getElementById('poga2').addEventListener('click', () => {
         Daudzums.value = "";
         PirkumaSaraksts.push(saraksts);
         render();
-    }
+    };
 });
+
 
 function render() {
     let Produkti = document.getElementById("saraksts");
@@ -40,12 +48,27 @@ function render() {
         <div class="pirkums">
             <h3>Produkts: ${PirkumaSaraksts[i].Produkts}</h3>
             <h4>Daudzums: ${PirkumaSaraksts[i].Daudzums}</h4>
+            <image src="remove.png" class ="close" >
         </div>`
 
         Produkti.innerHTML += pirkums;
-    }
 
-}
+
+    };
+
+    var close = document.getElementsByClassName("close");
+    for (i = 0; i < close.length; i++) {
+        close[i].onclick = function() {
+            var div = this.parentElement;
+            div.style.display = "none";
+
+
+
+        };
+    };
+};
+
+localStorage.setItem("PirkumaSaraksts", JSON.stringify(PirkumaSaraksts));
 
 
 

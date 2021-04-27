@@ -1,6 +1,11 @@
 .virsraksts {
-    font-family: Arial, sans-serif;
     text-align: center;
+    font-family: 'Oswald', Helvetica, sans-serif;
+    font-size: 40px;
+    transform: skewY(-1deg);
+    letter-spacing: 4px;
+    word-spacing: 10px;
+    color: rgb(250, 0, 0);
 }
 
 #poga {
@@ -14,14 +19,15 @@
 }
 
 body {
-    background-color: #b100f16e;
+    background: rgb(63, 251, 192);
+    background: radial-gradient(circle, rgba(63, 251, 192, 1) 0%, rgba(239, 0, 255, 1) 100%);
     font-family: 'Ubuntu', sans-serif;
 }
 
 #logs {
     display: none;
     position: absolute;
-    top: 54%;
+    top: 56.2%;
     left: 50%;
     background: rgba(43, 6, 33, 0.301);
     width: 250px;
@@ -76,7 +82,7 @@ body {
     border-radius: 5px;
     height: 60px;
     width: 280px;
-    background-color: rgba(255, 6, 172, 0.336);
+    background: rgb(10, 255, 228);
     padding: 5px;
     margin: 15px;
 }
@@ -87,4 +93,15 @@ h4 {
 
 h3 {
     margin-top: 5px;
+}
+
+.close {
+    height: 25px;
+    margin-top: -70px;
+    margin-left: 250px;
+    cursor: pointer;
+}
+
+div {
+    display: block;
 }
