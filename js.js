@@ -1,12 +1,12 @@
 const logs = document.getElementById("logs");
 let PirkumaSaraksts = []
 
-
+/*
 window.addEventListener("load", () => {
     PirkumaSaraksts = JSON.parse(localStorage.getItem("PirkumaSaraksts") || "[]");
     render();
 });
-
+*/
 
 document.getElementById('poga').addEventListener('click', () => {
     logs.style.display = 'block';
@@ -61,14 +61,16 @@ function render() {
         close[i].onclick = function() {
             var div = this.parentElement;
             div.style.display = "none";
-
-
-
+            PirkumaSaraksts = []
         };
+
     };
+
+
+
 };
 
-localStorage.setItem("PirkumaSaraksts", JSON.stringify(PirkumaSaraksts));
+
 
 
 
@@ -76,3 +78,4 @@ document.getElementById('poga2').addEventListener('click', () => {
     document.getElementById('poga').style.display = 'block';
 
 });
+//localStorage.setItem("PirkumaSaraksts", JSON.stringify(PirkumaSaraksts));

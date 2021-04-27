@@ -29,7 +29,7 @@ body {
     position: absolute;
     top: 56.2%;
     left: 50%;
-    background: rgba(43, 6, 33, 0.301);
+    background: rgba(255, 0, 187, 0.596);
     width: 250px;
     margin: -320px 0 0 -160px;
     padding: 45px;
@@ -51,7 +51,7 @@ body {
     width: 80px;
     margin-top: -2200px;
     text-align: center;
-    margin-left: 80px;
+    margin-left: 85px;
 }
 
 #poga2 {
@@ -78,10 +78,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 3px solid rgba(224, 6, 206, 0.801);
+    border: 3px solid rgba(233, 0, 0, 0.384);
     border-radius: 5px;
     height: 60px;
-    width: 280px;
+    width: 270px;
     background: rgb(10, 255, 228);
     padding: 5px;
     margin: 15px;
@@ -98,7 +98,7 @@ h3 {
 .close {
     height: 25px;
     margin-top: -70px;
-    margin-left: 250px;
+    margin-left: 245px;
     cursor: pointer;
 }
 
