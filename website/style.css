@@ -1,0 +1,111 @@
+.virsraksts {
+	text-align: center;
+	font-family: 'Oswald', Helvetica, sans-serif;
+	font-size: 40px;
+	transform: skewY(-1deg);
+	letter-spacing: 4px;
+	word-spacing: 10px;
+	color: rgb(250, 0, 0);
+}
+
+#poga {
+	display: block;
+	margin-top: 10px;
+	margin-left: 46%;
+	width: 155px;
+	height: 30px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+body {
+	background: rgb(63, 251, 192);
+	background: radial-gradient(
+		circle,
+		rgba(63, 251, 192, 1) 0%,
+		rgba(239, 0, 255, 1) 100%
+	);
+	font-family: 'Ubuntu', sans-serif;
+}
+
+#logs {
+	display: none;
+	position: absolute;
+	top: 56.2%;
+	left: 50%;
+	background: rgba(255, 0, 187, 0.596);
+	width: 250px;
+	margin: -320px 0 0 -160px;
+	padding: 45px;
+	box-shadow: 0 0 3px rgb(255, 0, 0);
+}
+
+#Produkts {
+	margin-top: x;
+	margin-left: 45px;
+	border-radius: 2px;
+	opacity: 100%;
+	width: 150px;
+	text-align: center;
+}
+
+#Daudzums {
+	border-radius: 2px;
+	opacity: 100%;
+	width: 80px;
+	margin-top: -2200px;
+	text-align: center;
+	margin-left: 85px;
+}
+
+#poga2 {
+	cursor: pointer;
+	text-align: center;
+	margin-left: 60px;
+	margin-top: 7px;
+	align-items: center;
+}
+
+.virsraksts2 {
+	margin-top: -30px;
+	opacity: 100%;
+	text-align: center;
+}
+
+#saraksts {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.pirkums {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 3px solid rgba(233, 0, 0, 0.384);
+	border-radius: 5px;
+	height: 60px;
+	width: 270px;
+	background: rgb(10, 255, 228);
+	padding: 5px;
+	margin: 15px;
+}
+
+h4 {
+	margin-top: -15px;
+}
+
+h3 {
+	margin-top: 5px;
+}
+
+.close {
+	height: 25px;
+	margin-top: -70px;
+	margin-left: 245px;
+	cursor: pointer;
+}
+
+div {
+	display: block;
+}
